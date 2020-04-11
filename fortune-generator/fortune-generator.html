@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Generator</title>
+</head>
+<body onload="myFunction()" style="color: white;font-size: 30px;background-color: #282828;"> 
+    <a href="index.html"><button style="width: 200px;height: 50px;background-color: #ff7675;font-size: 18px;margin-top: 20px;margin-left: 20px;">Back</button></a>
+    <p id="text" style="text-align: center;height: auto; width: 500px;border: 2px solid black;margin:auto;margin-top: 100px;"></p>
+</body>
+    <script>
+        let showQuotes = document.querySelector('#text')
+        let quotes = ['1',
+        '2','3','4','5',]
+       
+       
+       
+        let random = Math.floor(Math.random() * 4);
+        function myFunction(){
+            showQuotes.innerHTML= quotes[random];
+        }
+    </script>
+</html>
